@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./stylesheets/base.css">
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <title><%= title %></title>
+</head>
+<body>
+
+<div id="plan">
+    <h2>版本:2.0.5</h2>
+    <h4>本次更新:</h4>
+    <p>基于前后端分离思想，MVC架构设计模式，将前端项目部署于node服务器，后端项目部署于apache服务器。</p>
+    <p>架设node中间层，实现前后端完全分离，前端接口由node提供，后端接口由php提供。</p>
+    <p>相关技术：访问时验证、路由拦截非法访问重定向(node+express+session+redirect)</p>
+    <p>路由、接口转发(node+request)</p>
+    <p>设计思路来源:https://blog.csdn.net/brokenkay/article/details/112711241</p>
+</div>
+<div id="container">
+    <div class="form">
+        <h2 class="title">请登录</h2>
+        <form id="form">
+            <div class="text">
+                <label for="text">用户:</label><input type="text" name="text" id="text" autocomplete="off">
+            </div>
+            <div class="password">
+                <label for="password">密码:</label><input type="password" name="password" id="password">
+            </div>
+            <div class="bdcc">
+                <input type="checkbox" id="check">&emsp;<label for="check">记住用户名和密码</label>
+            </div>
+            <div class="btn">
+                <button type="button" class="zc">注册</button>
+                <button type="button" class="cz">重置</button>
+            </div>
+            <div class="btn btn-d">
+                <button type="button" class="dl">登&emsp;&emsp;&emsp;&emsp;&emsp;录</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="./lib/jquery.js"></script>
+<script src="./javascripts/init_data.js"></script>
+<script src="./lib/md5.js"></script>
+</body>
+</html>

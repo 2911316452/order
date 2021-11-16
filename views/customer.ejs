@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../stylesheets/base.css">
+    <link rel="stylesheet" href="../stylesheets/customer.css">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <title>客户管理</title>
+</head>
+<body>
+<div id="root"></div>
+<div id="main">
+    <div class="left">
+        <h2>公司联系方式</h2>
+        <div class="l_b">
+            <p>地址：大连高新技术园区 新新园艺创业中心</p>
+            <p>电话：86-411-65134242</p>
+            <p>传真：86-411-65134120</p>
+            <p>E-mail:xinxinpqrker@dl.cn</p>
+        </div>
+    </div>
+    <div class="middle"></div>
+    <div class="right">
+        <h2>请您留下联系方式</h2>
+        <div class="r_b">
+            <div class="items">
+                <label for="text1">姓名</label><input type="text" id="text1">
+            </div>
+            <div class="items">
+                <label for="text2">电话</label><input type="text" id="text2">
+            </div>
+            <div class="items">
+                <label for="text3">地址</label><input type="text" id="text3">
+            </div>
+            <div class="bt">
+                <button type="button" onclick="insertDate()">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom_body">
+    <table class="tabled">
+        <tr>
+            <th>姓名</th>
+            <th>电话</th>
+            <th>地址</th>
+            <th>操作</th>
+        </tr>
+    </table>
+</div>
+</body>
+<script src="../lib/jquery.js"></script>
+<script src='../lib/react.production.min.js'></script>
+<script src='../lib/react-dom.production.min.js'></script>
+<script src='../lib/gsap.min.js'></script>
+<script src="../javascripts/script.js"></script>
+<script src="../javascripts/customer.js"></script>
+</html>
+
+

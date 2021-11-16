@@ -1,0 +1,207 @@
+html,
+body {
+    height: 100%;
+    user-select: none;
+}
+
+#container {
+    height: 100%;
+    background: linear-gradient(120deg,
+    #7ad1f3,
+    #7af1c9,
+    #cebaba,
+    #52caf3);
+}
+
+#container .form {
+    opacity: 0;
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.3);
+    color: #fff;
+    animation: o1 800ms ease-in-out forwards;
+}
+
+#container .form .title {
+    margin: 20px 0 0 20px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+
+#form {
+    width: 300px;
+    height: 300px;
+    /*background: #0c4757;*/
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+#form .text,
+.password {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    align-content: center;
+    margin-top: 30px;
+}
+
+#form .text input,
+.password input {
+    width: 80%;
+    height: 20px;
+    margin-top: 8px;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    color: #fff;
+}
+
+#form .text label,
+.password label {
+    width: 18%;
+    height: 30px;
+    display: flex;
+    line-height: 40px;
+}
+
+#form .btn {
+    width: 100%;
+    height: 30px;
+    /*background: #0affff;*/
+    margin-top: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+#form .btn button {
+    width: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    line-height: 28px;
+    font-size: 15px;
+    font-weight: 900;
+    background: #a1a0a0;
+    box-shadow: 0 0 3px 0 #9d9d9d;
+    color: #3a3a3a;
+}
+
+#form .btn button:nth-child(2) {
+    background: #d0bb92;
+}
+
+#form .btn-d button {
+    width: 77%;
+    line-height: 27px;
+    background: #7ecb98;
+    color: #f0ffbe;
+    font-weight: 900;
+    font-size: 17px;
+}
+
+#form .btn-d {
+    margin-top: 10px;
+}
+
+#form .btn button:nth-child(1):hover {
+    color: #99e1e1;
+}
+
+#form .btn button:nth-child(2):hover {
+    color: #ffffff;
+}
+
+#form .btn-d button:nth-child(1):hover {
+    color: #fcf067;
+    box-shadow: 0 0 3px 0 #171817;
+}
+
+#form .bdcc {
+    margin-top: 20px;
+    display: flex;
+    line-height: 13px;
+    font-size: 13px;
+}
+
+#form .bdcc input {
+    width: 14px;
+    height: 14px;
+    border: 0;
+}
+
+/* *********************************************** */
+
+#plan {
+    opacity: 0;
+    position: absolute;
+    background: #9d76ac;
+    width: 40%;
+    height: 22%;
+    font-size: 1em;
+    font-weight: 900;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    justify-content: flex-start;
+    color: #464453;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 100px;
+    padding: 30px;
+}
+
+#plan > h4 {
+    width: 100%;
+}
+
+@keyframes o1 {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        right: 0;
+    }
+
+    40% {
+        opacity: 1;
+        transform: scale(1);
+        right: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        right: -60%;
+    }
+
+}
+
+@keyframes o2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.o2 {
+    animation: o2 500ms ease-in-out forwards;
+}

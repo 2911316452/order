@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "647457",
+      "name": "回复",
+      "font_class": "huifu",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "963856",
+      "name": "赞",
+      "font_class": "zan",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    }
+  ]
+}
